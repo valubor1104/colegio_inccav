@@ -11,7 +11,7 @@
 
 <body>
 	<div class="login" style="text-align: center;">
-		<img src="./imagenes/logo.jpg" width="200px" height="200px">
+		<img src="./imagenes/logoprado.jpeg" width="200px" height="200px">
 		<h1 class="estilo">Login</h1>
 		<form id="loginForm" class="login-form">
 			<input type="text" name="user" id="user" placeholder="Usuario" required />
