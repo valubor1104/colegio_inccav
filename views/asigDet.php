@@ -19,6 +19,7 @@
             <thead>
                 <tr>
                     <th scope="col">Curso Asignado</th>
+                    <th scope="col">Estado</th>
                 </tr>
             </thead>
             <tbody>
@@ -26,16 +27,20 @@
                 require '../config/conexion.php';
 
                 // Cambia la consulta para incluir la información de la tabla curso
-                $query = $conn->query("SELECT ad.curso1, ad.id_asig, c.descripcion as curso_descripcion
+                $query = $conn->query("SELECT ad.curso1, ad.id_asig, c.descripcion as curso_descripcion, ea.estado as estado_curso
                            FROM asig_det ad
                            LEFT JOIN curso c ON ad.curso1 = c.id_curso
-                           WHERE ad.id_asig =" . $_GET['Id']);
+                           LEFT JOIN estado_alu ea ON ad.estado_curso = ea.id_estAlu
+                           WHERE ad.id_asig = " . $_GET['Id']);
 
                 while ($result = $query->fetch_assoc()) {
                     ?>
                     <tr>
                         <th scope="row">
                             <?php echo $result['curso_descripcion'] ?>
+                        </th>
+                        <th scope="row">
+                            <?php echo $result['estado_curso'] ?>
                         </th>
                     </tr>
                     <?php

@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo '
             <script language="javascript">
                 alert("Registro actualizado correctamente");
-                window.location.replace("https://colegioinccav.online/views/formcobros.php");
+                window.location.replace("../views/formcobros.php");
             </script>
         ';
     } catch (Exception $e) {
@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo '
             <script language="javascript">
                 alert("Error al actualizar el registro");
-                window.location.replace("https://colegioinccav.online/views/formcobros.php");
+                window.location.replace("../views/formcobros.php");
             </script>
         ';
     }

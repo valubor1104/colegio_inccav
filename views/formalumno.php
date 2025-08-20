@@ -51,9 +51,13 @@
 							<?php echo $result['estado'] ?>
 						</th>
 						<th>
-							<a href="../views/editarAlu.php?Id=<?php echo $result['carnet']?>" class= "btn btn-secondary">Editar</a>
-							<a href="../controladores/eliminarAlu.php?Id=<?php echo $result['carnet']?>" class= "btn btn-danger">Eliminar</a>
+							<a href="../views/editarAlu.php?Id=<?php echo $result['carnet']?>" class="btn btn-secondary">Editar</a>
+							<a href="../controladores/eliminarAlu.php?Id=<?php echo $result['carnet']?>" class="btn btn-danger">Eliminar</a>
+							<a href="../controladores/darBajaAlu.php?Id=<?php echo $result['carnet']?>" 
+							class="btn btn-warning"
+							onclick="return confirm('¿Seguro que deseas dar de baja a este alumno?')">Dar de Baja</a>
 						</th>
+
 					</tr>
 				<?php
 				}

@@ -11,14 +11,14 @@ require '../config/conexion.php';
     echo '
 				<script language="javascript">
 					alert("Registro creado correctamente");
-					window.location.replace("https://colegioinccav.online/views/formgrados.php");
+					window.location.replace("../views/formgrados.php");
 				</script>
 			';
     } else {
     echo '
 				<script language="javascript">
 					alert("Error al  crear el registro");
-					window.location.replace("https://colegioinccav.online/views/formgrados.php");
+					window.location.replace("../views/formgrados.php");
 				</script>
 			';
     }

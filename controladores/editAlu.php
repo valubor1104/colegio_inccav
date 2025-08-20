@@ -20,14 +20,14 @@ if ($resultado = $conn->query($query)) {
     echo '
 				<script language="javascript">
 					alert("Registro actualizado correctamente");
-					window.location.replace("https://colegioinccav.online/views/formalumno.php");
+					window.location.replace("../views/formalumno.php");
 				</script>
 			';
 } else {
     echo '
 				<script language="javascript">
 					alert("Error al actualizar el registro");
-					window.location.replace("https://colegioinccav.online/views/formalumno.php");
+					window.location.replace("../views/formalumno.php");
 				</script>
 			';
 }

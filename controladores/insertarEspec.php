@@ -24,14 +24,14 @@ $conn->close();
     echo '
 				<script language="javascript">
 					alert("Registro creado correctamente");
-					window.location.replace("https://colegioinccav.online/views/especialidades.php");
+					window.location.replace("../views/especialidades.php");
 				</script>
 			';
     } else {
     echo '
 				<script language="javascript">
 					alert("Error al  crear el registro");
-					window.location.replace("https://colegioinccav.online/views/especialidades.php");
+					window.location.replace("../views/especialidades.php");
 				</script>
 			';
     }*/
