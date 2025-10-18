@@ -31,12 +31,12 @@
                 <?php
 
                 include '../config/conexion.php';
-                $sql3 = "SELECT * FROM colegio_inccav.estado_asis WHERE id_estAsis =" . $row['estado'];
+                $sql3 = "SELECT * FROM colegio.estado_asis WHERE id_estAsis =" . $row['estado'];
                 $resultado3 = $conn->query($sql3);
                 $row3 = $resultado3->fetch_assoc();
                 echo "<option selected value='" . $row3['id_estAsis'] . "'>" . $row3['estado'] . "</option>";
 
-                $sql4 = "SELECT * FROM colegio_inccav.estado_asis";
+                $sql4 = "SELECT * FROM colegio.estado_asis";
                 $resultado4 = $conn->query($sql4);
 
                 while ($fila = $resultado4->fetch_array()) {

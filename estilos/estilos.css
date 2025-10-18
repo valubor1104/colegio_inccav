@@ -5,15 +5,18 @@
 	box-sizing: border-box;
 	font-family: 'Open Sans';
 }
+.root-theme-dark { }
 body{
 	background-image: url(img/fondo.jpg);
 	background-size: cover;
-    background-color: #6d0d0d
+	/* Fondo de respaldo oscuro */
+	background-color: #0f1720;
+	color: #e6eef6;
 }
 nav{
 	max-width: 900px;
 	margin: auto;
-	background-color: #333;
+	background-color: #12232b; /* azul/gris oscuro */
 	font-size: 20px;
 	margin-top: 50px;
 }
@@ -25,18 +28,18 @@ nav{
 .menu-horizontal > li > a{
 	display: block;
 	padding: 15px 20px;
-	color: white;
+	color: #e6eef6;
 	text-decoration: none;
 }
 .menu-horizontal > li:hover{
-	background-color: red;
+	background-color: #154a7a; /* acento azul al pasar */
 }
 .menu-vertical{
 	position: absolute;
 	display: none;
 	list-style: none;
 	width: 200px;
-	background-color: rgba(0, 0, 0, .5);
+	background-color: rgba(10, 20, 30, .65);
 }
 .menu-horizontal li:hover .menu-vertical{
 	display: block;
@@ -47,7 +50,7 @@ nav{
 
 .menu-vertical li a{
 	display: block;
-	color: white;
+	color: #e6eef6;
 	text-decoration: none;
 	padding: 15px 15px 15px 20px;
 }
@@ -56,7 +59,7 @@ nav{
 	margin: auto;
 	padding: 20px;
 	max-width: 900px;
-	background: #333;
+	background: #0f1720;
 
 }
 

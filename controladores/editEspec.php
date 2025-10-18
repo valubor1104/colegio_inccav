@@ -6,7 +6,7 @@ require '../config/conexion.php';
     $Desc = $_POST['desc'];;
 
 
-$query = "UPDATE colegio_inccav.especialidad SET
+$query = "UPDATE colegio.especialidad SET
     id_espec = '" . $idespec . "',
     descripcion = '" . $Desc . "' WHERE id_espec='" . $id . "'";
 

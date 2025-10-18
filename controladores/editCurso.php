@@ -7,7 +7,7 @@ require '../config/conexion.php';
     $id_cat = $_POST['id_cat'];
 
 
-$query = "UPDATE colegio_inccav.curso SET
+$query = "UPDATE colegio.curso SET
     id_curso = '" . $idcurso . "',
     descripcion = '" . $nombrecurso . "',
     id_cat = '" . $id_cat . "' WHERE id_curso='" . $id . "'";

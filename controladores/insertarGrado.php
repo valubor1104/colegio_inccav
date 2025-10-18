@@ -4,7 +4,7 @@ require '../config/conexion.php';
     $grado = $_POST['grado'];
     
 
-    $query = "insert into colegio_inccav.grado(grado) 
+    $query = "insert into colegio.grado(grado) 
     values('" . $grado . "')";
     $resultado = mysqli_query($conn, $query);
     if ($resultado == 1) {

@@ -1,7 +1,7 @@
 <?php
 require '../config/conexion.php';
 
-/*$query = "insert into colegio_inccav.curso(descripcion, id_Cat) 
+/*$query = "insert into colegio.curso(descripcion, id_Cat) 
     values('" . $nombrecurso . "', '" . $idCatC . "')";
     $resultado = mysqli_query($conn, $query);
     if ($resultado == 1) {

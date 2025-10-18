@@ -7,7 +7,7 @@ require '../config/conexion.php';
     $rolU = $_POST['rol'];
     
 
-    $query = "insert into colegio_inccav.usuario(nombre, nombre_usuario, clave, rol) 
+    $query = "insert into colegio.usuario(nombre, nombre_usuario, clave, rol) 
     values('" . $nombreU . "', '" . $userU . "', '" . $claveU . "','" . $rolU . "')";
     $resultado = mysqli_query($conn, $query);
     if ($resultado == 1) {

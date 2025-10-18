@@ -8,7 +8,7 @@ require '../config/conexion.php';
     $rolU = $_POST['rol'];
 
 
-$query = "UPDATE colegio_inccav.usuario SET
+$query = "UPDATE colegio.usuario SET
     nombre = '" . $nombreU . "',
     nombre_usuario = '" . $userU . "',
     clave = '" . $claveU . "',

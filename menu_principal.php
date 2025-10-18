@@ -65,6 +65,14 @@ $rol = $_SESSION['rol']; // rol del usuario
                 <li><a href="./views/formsalon.php">Salones</a></li>
             </ul>
         </li>
+        <li><a href="#">Contabilidad</a>
+            <ul class="menu-vertical">
+                <li><a href="./views/cuentasLista.php">Cuentas</a></li>
+                <li><a href="./views/asientosLista.php">Asientos</a></li>
+                <li><a href="./views/planillaLista.php">Planillas</a></li>
+                <!-- <li><a href="./views/bancosLista.php">Bancos</a></li>-->
+            </ul>
+        </li>
         <?php endif; ?>
     </ul>
 </nav>

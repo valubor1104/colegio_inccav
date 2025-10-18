@@ -5,7 +5,7 @@ require '../config/conexion.php';
     $sector = $_POST['sector'];
     
 
-    $query = "insert into colegio_inccav.salon(no_salon, sector) 
+    $query = "insert into colegio.salon(no_salon, sector) 
     values('" . $no_salon . "', '" . $sector . "')";
     $resultado = mysqli_query($conn, $query);
     if ($resultado == 1) {

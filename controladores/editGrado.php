@@ -5,7 +5,7 @@ require '../config/conexion.php';
     $grado = $_POST['grado'];;
 
 
-$query = "UPDATE colegio_inccav.grado SET
+$query = "UPDATE colegio.grado SET
     grado = '" . $grado . "' WHERE id='" . $id . "'";
 
 if ($resultado = $conn->query($query)) {

@@ -29,7 +29,7 @@
                 <option selected disabled>---seleccionar especialidad---</option>
                 <?php
                 include '../config/conexion.php';
-                $sql = $conn->query("SELECT * FROM colegio_inccav.especialidad;");
+                $sql = $conn->query("SELECT * FROM colegio.especialidad;");
                 while ($resultado = $sql->fetch_assoc()) {
                     echo "<option value='" . $resultado['id_espec'] . "'>" . $resultado['descripcion'] . "</option>";
                 }
@@ -41,7 +41,7 @@
                 <option selected disabled>---seleccionar estado---</option>
                 <?php
                 include '../config/conexion.php';
-                $sql = $conn->query("SELECT * FROM colegio_inccav.estado_catedra;");
+                $sql = $conn->query("SELECT * FROM colegio.estado_catedra;");
                 while ($resultado = $sql->fetch_assoc()) {
                     echo "<option value='" . $resultado['id_estCate'] . "'>" . $resultado['estado'] . "</option>";
                 }

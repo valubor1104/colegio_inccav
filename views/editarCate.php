@@ -45,12 +45,12 @@
                 <?php
 
                 include '../config/conexion.php';
-                $sql1 = "SELECT * FROM colegio_inccav.especialidad WHERE id_espec =" . $row['especialidad'];
+                $sql1 = "SELECT * FROM colegio.especialidad WHERE id_espec =" . $row['especialidad'];
                 $resultado1 = $conn->query($sql1);
                 $row1 = $resultado1->fetch_assoc();
                 echo "<option selected value='" . $row1['id_espec'] . "'>" . $row1['descripcion'] . "</option>";
 
-                $sql2 = "SELECT * FROM colegio_inccav.especialidad";
+                $sql2 = "SELECT * FROM colegio.especialidad";
                 $resultado2 = $conn->query($sql2);
 
                 while ($fila = $resultado2->fetch_array()) {
@@ -67,12 +67,12 @@
                 <?php
 
                 include '../config/conexion.php';
-                $sql3 = "SELECT * FROM colegio_inccav.estado_catedra WHERE id_estCate =" . $row['estado'];
+                $sql3 = "SELECT * FROM colegio.estado_catedra WHERE id_estCate =" . $row['estado'];
                 $resultado3 = $conn->query($sql3);
                 $row3 = $resultado3->fetch_assoc();
                 echo "<option selected value='" . $row3['id_estCate'] . "'>" . $row3['estado'] . "</option>";
 
-                $sql4 = "SELECT * FROM colegio_inccav.estado_alu";
+                $sql4 = "SELECT * FROM colegio.estado_alu";
                 $resultado4 = $conn->query($sql4);
 
                 while ($fila = $resultado4->fetch_array()) {

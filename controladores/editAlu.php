@@ -9,7 +9,7 @@ $descripcionA = $_POST['descripcion'];
 $estadoA = $_POST['estado'];
 
 
-$query = "UPDATE colegio_inccav.alumno SET
+$query = "UPDATE colegio.alumno SET
     carnet = '" . $carnetA . "',
     nombre = '" . $nombreA . "',
     apellido = '" . $apellidoA . "',

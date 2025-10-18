@@ -18,7 +18,7 @@
                 <option selected disabled>---Seleccione alumno---</option>
                 <?php
                 include '../config/conexion.php';
-                $sql = $conn->query("SELECT * FROM colegio_inccav.alumno;");
+                $sql = $conn->query("SELECT * FROM colegio.alumno;");
                 while ($resultado = $sql->fetch_assoc()) {
                     echo "<option value='" . $resultado['carnet'] . "'>" . $resultado['nombre'] . " " . $resultado['apellido'] . "</option>";
                 }
@@ -30,7 +30,7 @@
             <select class="form-select mb-3" name="semestre">
                 <option selected disabled>---Seleccione semestre---</option>
                 <?php
-                $sql = $conn->query("SELECT * FROM colegio_inccav.grado;");
+                $sql = $conn->query("SELECT * FROM colegio.grado;");
                 while ($resultado = $sql->fetch_assoc()) {
                     echo "<option value='" . $resultado['id'] . "'>" . $resultado['grado'] . "</option>";
                 }
@@ -45,7 +45,7 @@
                     <select class="form-select mb-3" name="curso<?= $i ?>">
                         <option selected disabled>---Seleccione curso---</option>
                         <?php
-                        $sql = $conn->query("SELECT * FROM colegio_inccav.curso;");
+                        $sql = $conn->query("SELECT * FROM colegio.curso;");
                         while ($resultado = $sql->fetch_assoc()) {
                             echo "<option value='" . $resultado['id_curso'] . "'>" . $resultado['descripcion'] . "</option>";
                         }

@@ -1,0 +1,133 @@
+:root{
+    --azul-oscuro: #143549;
+    --azul: #1f4e79;
+    --gris-claro: #0f1720;
+    --gris: #22333b;
+    --texto: #e6eef6;
+    --exito: #2e7d32;
+    --error: #c9423a;
+}
+
+body.pi-body{
+    background: linear-gradient(180deg, #f7fbff 0%, var(--gris-claro) 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--texto);
+    margin: 20px;
+}
+
+.pi-card{
+    max-width: 980px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid var(--gris);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(41,67,98,0.06);
+}
+
+.pi-title{
+    color: var(--azul-oscuro);
+    margin: 0 0 12px 0;
+    font-size: 20px;
+}
+
+.pi-form label{
+    display:block;
+    margin: 10px 0 4px;
+    font-weight: 600;
+    color: var(--azul);
+}
+
+.pi-form input[type="text"],
+.pi-form input[type="number"],
+.pi-form input[type="datetime-local"]{
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid var(--gris);
+    border-radius: 4px;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.pi-actions{
+    margin-top: 16px;
+    display:flex;
+    gap:10px;
+}
+
+.btn-primary{
+    background: var(--azul);
+    color: #fff;
+    padding: 8px 14px;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-secondary{
+    background: transparent;
+    color: var(--azul-oscuro);
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    border: 1px solid var(--gris);
+}
+
+.pi-table{
+    width:100%;
+    border-collapse: collapse;
+    margin-top: 14px;
+    font-size: 14px;
+}
+
+.pi-table th, .pi-table td{
+    border: 1px solid var(--gris);
+    padding: 8px 10px;
+    text-align: left;
+}
+
+.pi-table thead th{
+    background: linear-gradient(90deg, var(--azul) 0%, var(--azul-oscuro) 100%);
+    color: #fff;
+    font-weight: 700;
+}
+
+.pi-empty{
+    text-align:center;
+    padding: 20px;
+    color: #666;
+}
+
+.pi-alert{
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background: #eef7ff;
+    color: var(--azul-oscuro);
+    border: 1px solid var(--gris);
+}
+
+.pi-alert.error{
+    background: #fff0f0;
+    color: var(--error);
+    border-color: rgba(198, 54, 54, 0.15);
+}
+
+.pi-actions-row{
+    display:flex;
+    justify-content:flex-end;
+    margin-bottom:8px;
+}
+
+.pi-td-actions a{
+    margin-right:6px;
+    padding:6px 8px;
+    border-radius:4px;
+    text-decoration:none;
+    color:#fff;
+    font-size:13px;
+}
+
+.btn-edit{ background: #2a7ab8; }
+.btn-delete{ background: #c62828; }
