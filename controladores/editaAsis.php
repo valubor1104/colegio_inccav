@@ -5,7 +5,7 @@ require '../config/conexion.php';
     $estado = $_POST['estado'];;
 
 
-$query = "UPDATE colegio.asistencia SET
+$query = "UPDATE asistencia SET
     estado = '" . $estado . "' WHERE id_asis='" . $id . "'";
 
 if ($resultado = $conn->query($query)) {

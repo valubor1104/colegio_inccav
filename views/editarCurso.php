@@ -41,12 +41,12 @@
                  <?php
 
                 include '../config/conexion.php';
-                $sql1 = "SELECT * FROM colegio.catedratico WHERE id_cat =" . $row['id_cat'];
+                $sql1 = "SELECT * FROM catedratico WHERE id_cat =" . $row['id_cat'];
                 $resultado1 = $conn->query($sql1);
                 $row1 = $resultado1->fetch_assoc();
                 echo "<option selected value='" . $row1['id_cat'] . "'>" . $row1['nombre'] . " " . $row1['apellido'] . "</option>";
 
-                $sql2 = "SELECT * FROM colegio.catedratico";
+                $sql2 = "SELECT * FROM catedratico";
                 $resultado2 = $conn->query($sql2);
                 while ($fila = $resultado2->fetch_array()) {
                    echo "<option value='" . $fila['id_cat'] . "'>" . $fila['nombre'] . " " . $fila['apellido'] . "</option>";

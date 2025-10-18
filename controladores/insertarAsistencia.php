@@ -7,7 +7,7 @@ require '../config/conexion.php';
     $id_curso = $_POST['id_curso'];
     
 
-    $query = "insert into colegio.asistencia(carnet, fecha, estado, id_curso) 
+    $query = "insert into asistencia(carnet, fecha, estado, id_curso) 
     values('" . $carnet . "', '" . $fecha. "','" . $estado. "','" . $id_curso . "')";
     $resultado = mysqli_query($conn, $query);
     if ($resultado == 1) {

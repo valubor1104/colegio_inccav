@@ -31,7 +31,7 @@
                 <option selected disabled>---seleccionar rol---</option>
                 <?php
                 include '../config/conexion.php';
-                $sql = $conn->query("SELECT * FROM colegio.rol;");
+                $sql = $conn->query("SELECT * FROM rol;");
                 while ($resultado = $sql->fetch_assoc()) {
                     echo "<option value='" . $resultado['id_rol'] . "'>" . $resultado['rol'] . "</option>";
                 }

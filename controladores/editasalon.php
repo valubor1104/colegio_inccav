@@ -6,7 +6,7 @@ require '../config/conexion.php';
     $sector = $_POST['sector'];;
 
 
-$query = "UPDATE colegio.salon SET
+$query = "UPDATE salon SET
     no_salon = '" . $no_salon . "',
     sector = '" . $sector . "' WHERE no_salon='" . $id . "'";
 

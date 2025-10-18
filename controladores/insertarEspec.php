@@ -17,7 +17,7 @@ $sql->close();
 $conn->close();
 
 
- /* $query = "insert into colegio.especialidad(id_espec, descripcion) 
+ /* $query = "insert into especialidad(id_espec, descripcion) 
     values('" . $idespec . "', '" . $Desc . "')";
     $resultado = mysqli_query($conn, $query);
     if ($resultado == 1) {

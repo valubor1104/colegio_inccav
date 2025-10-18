@@ -9,7 +9,7 @@ require '../config/conexion.php';
     $estadoCA = $_POST['estado'];
 
 
-$query = "UPDATE colegio.catedratico SET
+$query = "UPDATE catedratico SET
     id_cat = '" . $idcate . "',
     nombre = '" . $nombreCA . "',
     apellido = '" . $apellidoCA . "',

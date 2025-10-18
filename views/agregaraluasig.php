@@ -20,7 +20,7 @@
                 <option selected disabled>---seleccionar alumno a asignar---</option>
                 <?php
                 include '../config/conexion.php';
-                $sql = $conn->query("SELECT * FROM colegio.alumno;");
+                $sql = $conn->query("SELECT * FROM alumno;");
                 while ($resultado = $sql->fetch_assoc()) {
                     echo "<option value='" . $resultado['carnet'] . "'>" . $resultado['nombre'] . " " . $resultado['apellido'] . "</option>";
                 }
@@ -32,7 +32,7 @@
                 <option selected disabled>---seleccione semestre a cursar---</option>
                 <?php
                 include '../config/conexion.php';
-                $sql = $conn->query("SELECT * FROM colegio.grado;");
+                $sql = $conn->query("SELECT * FROM grado;");
                 while ($resultado = $sql->fetch_assoc()) {
                     echo "<option value='" . $resultado['id'] . "'>" . $resultado['grado'] . "</option>";
                 }
@@ -44,7 +44,7 @@
                 <option selected disabled>---seleccione salon y sector a asignar ---</option>
                 <?php
                 include '../config/conexion.php';
-                $sql = $conn->query("SELECT * FROM colegio.salon;");
+                $sql = $conn->query("SELECT * FROM salon;");
                 while ($resultado = $sql->fetch_assoc()) {
                     echo "<option value='" . $resultado['no_salon'] . "'>" . $resultado['no_salon'] . " " . $resultado['sector'] . "</option>";
                     
@@ -57,7 +57,7 @@
                 <option selected disabled>---seleccione curso a asignar ---</option>
                 <?php
                 include '../config/conexion.php';
-                $sql = $conn->query("SELECT * FROM colegio.curso;");
+                $sql = $conn->query("SELECT * FROM curso;");
                 while ($resultado = $sql->fetch_assoc()) {
                     echo "<option value='" . $resultado['id_curso'] . "'>" . $resultado['descripcion'] . "</option>";
                     
@@ -70,7 +70,7 @@
                 <option selected disabled>---seleccione curso a asignar ---</option>
                 <?php
                 include '../config/conexion.php';
-                $sql = $conn->query("SELECT * FROM colegio.curso;");
+                $sql = $conn->query("SELECT * FROM curso;");
                 while ($resultado = $sql->fetch_assoc()) {
                     echo "<option value='" . $resultado['id_curso'] . "'>" . $resultado['descripcion'] . "</option>";
                     
@@ -83,7 +83,7 @@
                 <option selected disabled>---seleccione curso a asignar ---</option>
                 <?php
                 include '../config/conexion.php';
-                $sql = $conn->query("SELECT * FROM colegio.curso;");
+                $sql = $conn->query("SELECT * FROM curso;");
                 while ($resultado = $sql->fetch_assoc()) {
                     echo "<option value='" . $resultado['id_curso'] . "'>" . $resultado['descripcion'] . "</option>";
                     
@@ -96,7 +96,7 @@
                 <option selected disabled>---seleccione curso a asignar ---</option>
                 <?php
                 include '../config/conexion.php';
-                $sql = $conn->query("SELECT * FROM colegio.curso;");
+                $sql = $conn->query("SELECT * FROM curso;");
                 while ($resultado = $sql->fetch_assoc()) {
                     echo "<option value='" . $resultado['id_curso'] . "'>" . $resultado['descripcion'] . "</option>";
                     
@@ -109,7 +109,7 @@
                 <option selected disabled>---seleccione curso a asignar ---</option>
                 <?php
                 include '../config/conexion.php';
-                $sql = $conn->query("SELECT * FROM colegio.curso;");
+                $sql = $conn->query("SELECT * FROM curso;");
                 while ($resultado = $sql->fetch_assoc()) {
                     echo "<option value='" . $resultado['id_curso'] . "'>" . $resultado['descripcion'] . "</option>";
                     
@@ -122,7 +122,7 @@
                 <option selected disabled>---seleccione curso a asignar ---</option>
                 <?php
                 include '../config/conexion.php';
-                $sql = $conn->query("SELECT * FROM colegio.curso;");
+                $sql = $conn->query("SELECT * FROM curso;");
                 while ($resultado = $sql->fetch_assoc()) {
                     echo "<option value='" . $resultado['id_curso'] . "'>" . $resultado['descripcion'] . "</option>";
                     

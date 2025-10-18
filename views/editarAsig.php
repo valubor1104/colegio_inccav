@@ -34,12 +34,12 @@
                 <?php
 
                 include '../config/conexion.php';
-                $sql1 = "SELECT * FROM colegio.grado WHERE id =" . $row['semestre'];
+                $sql1 = "SELECT * FROM grado WHERE id =" . $row['semestre'];
                 $resultado1 = $conn->query($sql1);
                 $row1 = $resultado1->fetch_assoc();
                 echo "<option selected value='" . $row1['id'] . "'>" . $row1['grado'] . "</option>";
 
-                $sql2 = "SELECT * FROM colegio.grado";
+                $sql2 = "SELECT * FROM grado";
                 $resultado2 = $conn->query($sql2);
 
                 while ($fila = $resultado2->fetch_array()) {
@@ -55,12 +55,12 @@
                 <?php
 
                 include '../config/conexion.php';
-                $sql1 = "SELECT * FROM colegio.salon WHERE no_salon =" . $row['noSalon'];
+                $sql1 = "SELECT * FROM salon WHERE no_salon =" . $row['noSalon'];
                 $resultado1 = $conn->query($sql1);
                 $row1 = $resultado1->fetch_assoc();
                 echo "<option selected value='" . $row1['no_salon'] . "'>" . $row1['no_salon'] . " " . $row1['sector'] . "</option>";
 
-                $sql2 = "SELECT * FROM colegio.salon";
+                $sql2 = "SELECT * FROM salon";
                 $resultado2 = $conn->query($sql2);
 
                 while ($fila = $resultado2->fetch_array()) {

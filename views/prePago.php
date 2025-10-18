@@ -18,7 +18,7 @@
                 <option selected disabled>---seleccionar alumno---</option>
                 <?php
                 include '../config/conexion.php';
-                $sql = $conn->query("SELECT * FROM colegio.alumno;");
+                $sql = $conn->query("SELECT * FROM alumno;");
                 while ($resultado = $sql->fetch_assoc()) {
                     echo "<option value='" . $resultado['carnet'] . "'>" . $resultado['nombre'] . " " . $resultado['apellido'] . "</option>";
                 }

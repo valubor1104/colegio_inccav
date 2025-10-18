@@ -53,7 +53,7 @@
             // Usar consulta preparada que trae también el nombre del estado (si existe)
             // Si el usuario DB no tiene permisos sobre la tabla estado_alu, la preparación puede lanzar una excepción.
             try {
-                $stmt = $conn->prepare("SELECT a.*, e.estado AS estado_nombre FROM alumno a LEFT JOIN colegio.estado_alu e ON a.estado = e.id_estAlu WHERE a.carnet = ?");
+                $stmt = $conn->prepare("SELECT a.*, e.estado AS estado_nombre FROM alumno a LEFT JOIN estado_alu e ON a.estado = e.id_estAlu WHERE a.carnet = ?");
             } catch (mysqli_sql_exception $ex) {
                 error_log('DB prepare failed (editarAlu.php): ' . $ex->getMessage());
                 $stmt = false;
